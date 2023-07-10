@@ -67,8 +67,8 @@ SET(Boost_USE_MULTITHREADED=OFF)
 SET(Boost_USE_STATIC_RUNTIME=OFF)
 
 # Adapt it according to your system
-#FIND_PACKAGE(Boost 1.73.0 REQUIRED)
-FIND_PACKAGE(Boost 1.80.0 REQUIRED)
+FIND_PACKAGE(Boost 1.73.0 REQUIRED)
+#FIND_PACKAGE(Boost 1.80.0 REQUIRED)
 #FIND_PACKAGE(Boost REQUIRED)
 IF(Boost_FOUND)
   MESSAGE("Success!")
@@ -131,7 +131,7 @@ IF(CMAKE_COMPILER_IS_GNUCXX)
 # For Cygwin
 #  ADD_DEFINITIONS("-Wall -DCYGWIN")
 ELSE()
-  MESSAGE(FATAL_ERROR "CMakeLists.txt has not been tested/written for your compiler.")
+#  MESSAGE(FATAL_ERROR "CMakeLists.txt has not been tested/written for your compiler.")
 ENDIF()
 
 
