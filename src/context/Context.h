@@ -108,7 +108,7 @@ class Context{
   */
 
     try{  return ctx_pt.get_value<X>();    }
-    catch(std::exception& e){ cout<<"Error in get_value()!\n"; }
+    catch(std::exception& e){ cout<<"Error in get_value()!\n"; return (X)nullptr; }
   }
 
 
