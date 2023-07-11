@@ -103,7 +103,7 @@ void add_to_shell(std::vector<libint2::Shell>& shells,
                      }
                     );
     // Return the shell with new data
-    return shells;
+    return;
 
 }
 
