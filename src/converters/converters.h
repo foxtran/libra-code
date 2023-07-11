@@ -141,16 +141,16 @@ struct map_item
 {
     typedef typename T::key_type K;
     typedef typename T::mapped_type V;
-    static V& get(T const& x, K const& i)
+    static V& get(T & x, K const& i)
     {
         if( x.find(i) != x.end() ) return x[i];
         KeyError();
     }
-    static void set(T const& x, K const& i, V const& v)
+    static void set(T & x, K const& i, V const& v)
     {
         x[i]=v; // use map autocreation feature
     }
-    static void del(T const& x, K const& i)
+    static void del(T & x, K const& i)
     {
         if( x.find(i) != x.end() ) x.erase(i);
         else KeyError();
@@ -160,11 +160,11 @@ struct map_item
     {
         int i=0;
         for(typename T::const_iterator it=x.begin(); it!=x.end(); ++it,++i){
-          if( it->first == k ) return i;        
+          if( it->first == k ) return i;
         }
         return -1;
     }
- 
+
     static bool in(T const& x, K const& i)
     {
         return x.find(i) != x.end();
