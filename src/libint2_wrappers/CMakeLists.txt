@@ -30,9 +30,6 @@ endif()
 
 
 
-target_link_libraries(libint2_wrappers PRIVATE Libint2::int2)
-target_link_libraries(libint2_wrappers_stat PRIVATE Libint2::int2)
-
 #
 #  Link to external libraries
 #
