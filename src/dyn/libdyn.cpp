@@ -374,7 +374,7 @@ void export_dyn_decoherence_objects(){
   (dyn_control_params& prms, CMATRIX& amplitudes, nHamiltonian& ham, MATRIX& inv_alp) = &schwartz_1;
 
   vector<MATRIX> (*expt_schwartz_2_v1)
-  (dyn_control_params& prms, CMATRIX& amplitudes, nHamiltonian& ham, MATRIX& inv_alp) = &schwartz_2;
+  (dyn_control_params& prms, nHamiltonian& ham, MATRIX& inv_alp) = &schwartz_2;
 
 
 
